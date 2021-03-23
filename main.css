@@ -138,3 +138,21 @@ header li a:hover{
     top: 70%;
     display: none;
 }
+
+.dropdouwn-section .features-list {
+    display: grid;
+    gap: 5px;
+    grid-auto-flow: column;
+    position: absolute;
+    right: 20%;
+    top: 73%;
+    visibility: hidden;
+
+}
+
+
+
+.dropdouwn-section .features-list ul li:first-child{
+    color: rgb(206, 213, 219);
+    font-weight: 600;
+}
