@@ -6,19 +6,16 @@
 
 body{
     font-family: Roboto, "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
-   
+   width: 100%;
+   height: 100vh;
 }
-
-a{
-    text-decoration: none;
-}
-
 
 
 header{
     width: 90%;
     height: auto;
     margin: auto;
+    position: relative;
 
 }
 
@@ -41,8 +38,14 @@ nav{
 }
 
 header li a{
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(139, 149, 158);
+    text-decoration: none;
+
+}
+
+header li a:hover{
+    color:rgb(25, 28, 31);
 }
 
 .left-side ul{
@@ -51,14 +54,87 @@ header li a{
     justify-content: space-around;
 }
 
+.left-side ul li:nth-child(2) a{
+    color:rgb(25, 28, 31);
+}
+
+.right-side{
+    display: flex;
+    align-items:center ;
+}
+
 .right-side ul{
     align-self: center;
     justify-self: space-around;
 }
 
 .btn{
-    padding: 13px;
+    padding:14px 19px;
     border-radius: 10px;
     border: none;
     font-weight: bolder;
+    font-size: 16px;
+    float: right;
+    margin: 0 10px;
+}
+
+#btn-first{
+    color:rgb(25, 28, 31);
+    background-color:rgb(139, 149, 158);
+    margin-left: 30px;
+}
+
+#btn-second{
+    background-color:rgb(25, 28, 31);
+    color: white
+ 
+}
+
+.help-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdouwn-section{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.dropdouwn-section ul{
+    display: flex;
+    flex-direction: column;
+    background-color:white ;
+    border-radius: 10px;
+    box-shadow: 1px 0.5px #888888;
+}
+
+.dropdouwn-section ul li{
+    margin-top: 10px;
+    display: block;
+}
+
+.dropdouwn-section .help-list{
+    position: absolute;
+    right: 16%;
+    top: 70%;
+    display: none;
+}
+
+
+.dropdouwn-section .about-list{
+    position: absolute;
+    right: 22%;
+    top: 70%;
+    display: none;
+
+ }
+
+
+ .dropdouwn-section .plans-list{
+
+    position: absolute;
+    right: 32.5%;
+    top: 70%;
+    display: none;
 }
